@@ -44,7 +44,8 @@ class _CommunalPaymentState extends State<CommunalPayment> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text("Kamunal To'lovlar",
-            style: GoogleFonts.nunitoSans(fontSize: 24,fontWeight: FontWeight.bold)),
+            style: GoogleFonts.nunitoSans(
+                fontSize: 24, fontWeight: FontWeight.bold)),
         IconButton(onPressed: () {}, icon: const Icon(CupertinoIcons.search))
       ],
     );
@@ -84,20 +85,18 @@ class _CommunalPaymentState extends State<CommunalPayment> {
           borderOnForeground: true,
           surfaceTintColor: Colors.grey.shade400,
           child: InkWell(
-            onTap: () =>navigatePush(context, DetailedCommunal(paymentType: payment)),
+            onTap: () =>
+                navigatePush(context, DetailedCommunal(paymentType: payment)),
             child: Center(
               child: ListTile(
                 leading: icon,
                 title: Text(payment,
                     style: GoogleFonts.nunitoSans(fontWeight: FontWeight.bold)),
                 titleAlignment: ListTileTitleAlignment.center,
-                trailing: IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    CupertinoIcons.forward,
-                    color: AppColors.appColor,
-                    size: 30,
-                  ),
+                trailing: Icon(
+                  CupertinoIcons.forward,
+                  color: AppColors.appColor,
+                  size: 30,
                 ),
               ),
             ),

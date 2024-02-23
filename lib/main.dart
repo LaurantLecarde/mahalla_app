@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mahalla_app/mahalla_app/presentation/screens/bottom_screens/communal_screens/communal_payment.dart';
-import 'package:mahalla_app/mahalla_app/presentation/screens/main_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +16,7 @@ class MyApp extends StatelessWidget {
 
       /// TODO: GoogleFonts.nunitoSans() <==== SHUNDAN FOYDALANINGLAR TEXTNI STYLESIGA
 
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
         primaryColor:const Color(0xfffdfdfd)
